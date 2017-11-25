@@ -1,0 +1,187 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+a
+	&:hover,
+	&:focus
+		color: $orange
+		text-decoration: none
+
+p
+	margin: 1em 0
+
+b
+	font-weight: 600
+
+.wrapper
+	position: relative
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.fleft
+	float: left
+
+.fright
+	float: right
+
+.cf
+	&:after
+	&:before 
+		content: ''
+		display: table
+	&:after 
+		clear: both
+
+
+.btn
+	display: inline-block
+	height: 50px
+	min-width: 170px
+	margin: .6em 0
+	padding: 0 35px
+	line-height: 46px
+	border-radius: 0
+	border: 1px solid transparent
+	background-color: transparent
+	color: #fff
+	font-size: 16px
+	font-weight: 500
+	text-align: center
+	transition: all .25s ease
+	&.btn-med
+		min-width: 210px
+	&.btn-wt,
+	&.btn-t,
+		border: 1px solid #fff
+		&:hover,
+		&:focus,
+		&:active
+			border-color: $orange
+			background-color: $orange
+			color: #fff
+			outline: none
+	&.btn-t
+		border: 1px solid $orange
+		color: $orange
+	&.btn-orange
+		border: 1px solid $orange
+		color: #fff
+		background-color: $orange
+		&:hover,
+		&:focus,
+		&:active
+			border: 1px solid $orange-h
+			background-color: $orange-h
+			outline: none
+	&.btn-w
+		border: 1px solid #fff
+		color: $orange
+		background-color: #fff
+		&:hover,
+		&:focus,
+		&:active
+			color: $orange
+			background-color: $bg-b
+			outline: none
+
+.btn-group
+	text-align: center
+
+.form-group
+	margin-bottom: 20px
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"]
+	width: 255px
+	height: 50px
+	padding: 0 20px 0 30px
+	line-height: 46px
+	border: 1px solid #85929c
+	color: #fff
+	box-shadow: none
+	background-color: transparent
+	border-radius: 0
+	-webkit-appearance: none
+	transition: all .25s ease
+	&:focus
+		border: 1px solid #fff
+		outline: none
+
+input.error
+	border: 1px solid #f81d17 !important
+
+.nowrap
+	white-space: nowrap
+
+.section-b
+	padding: 80px 0
+
+.section-title
+	margin: 0 0 20px 0
+	padding-bottom: 3px
+	padding-left: 30px
+	font-size: 28px
+	font-weight: 500
+	color: $title-b
+	line-height: 1.3
+	border-left: 6px solid $orange
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
