@@ -1,63 +1,35 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-	<meta charset="utf-8">
-
-	<title>SmartLIFT</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-
-</head>
+//= html_includes/_head.html
 
 <body class="ishome">
 	<div class="wrapper">
-		<header class="main-header" style="background-image: url(img/bg-top.jpg)";>
-			<div class="top-line">
-				<div class="container">
-					<div class="contact-b fleft">
-						<span class="contact-b-item">Мытищи, ул. Воровского, д.1В</span>
-						<span class="contact-b-item">Пн-Пт с 9:00 до 18:00</span>
-					</div>
-					<div class="contact-b fright">
-						<a class="contact-b-item" href="mailto:mail@tkeks.ru">mail@tkeks.ru</a>
-						<a class="contact-b-item" href="tel:+74955825999">+7 (495) 582-59-99</a>
-						<button class="contact-b-item modal-btn">обратный звонок</button>
-					</div>
-				</div>
-			</div>
-		</header>
+		
+//= html_includes/_header.html
 
 		<main class="main">
-			
+			<section class="promo">
+				<div class="container">
+					<h1 class="section-title">Аренда <span class="sub-line">автовышек</span></h1>
+					<div class="contact-f-wrap">
+						<form action="#" class="contact-f">
+							<div class="title-f">Получить бесплатную <b>консультацию</b></div>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Ваше имя">
+							</div>
+							<div class="form-group">
+								<input type="tel" name="phone" placeholder="Телефон">
+							</div>
+							<input type="submit" value="Отправить" class="btn">
+						</form>
+					</div>
+				</div>
+			</section>
+
+			//= html_includes/_advantages-section.html
+
+			//= html_includes/_catalog-section.html
+
+			//= html_includes/_gallery-section.html
+
 		</main>
 		
-		<footer class="main-footer">
-			
-		</footer>
-	</div>
-	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-
-</body>
-</html>
+//= html_includes/_footer.html

@@ -1,2 +1,14 @@
-$default-font: "roboto-example", sans-serif
-$accent: orange
+$font: 'Ubuntu', Helvetica, sans-serif
+$accent: #ff931e
+$accent-h: #f68811
+$blue: #2e3192
+$smooth-blue: #595b9d
+$light-blue: #9b9dda
+$whitey: #f7f7f7
+
+@mixin br-gradient()
+	background: $blue;
+	background: -moz-linear-gradient(left, $blue 0%, #14176c 100%);
+	background: -webkit-linear-gradient(left, $blue 0%,#14176c 100%);
+	background: linear-gradient(to right, $blue 0%,#14176c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='#14176c',GradientType=1 );

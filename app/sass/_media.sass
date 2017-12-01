@@ -2,30 +2,334 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1600px)
+	.promo
+		&:after
+			background-size: 860px 450px
+
+	.upBtn
+		right: 2%
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.promo
+		&:after
+			background-size: 660px 360px
+			background-position: 80% 85%
+		.container
+			height: 580px
+		.contact-f-wrap
+			display: none
+		.section-title
+			top: 170px
+			font-size: 34px
 
+	.navbar
+		margin-top: 17px
+		margin-left: 14px
+
+	.ishome .navbar
+		margin-top: 30px
+		margin-left: 14px
+
+	.logo
+		max-width: 200px
+		height: 85px
+		background-size: 100% 100%
+
+	.advantages
+		margin: 80px 0
+
+	.top-line-b
+		&:nth-child(1)
+			width: 260px
+			padding: 0 25px
+
+	.catalog
+		margin-bottom: 60px
+
+	.catalog-list 
+		.card
+			.btn
+				min-width: 120px
+				width: 120px
+
+	.contact-f-wrap
+		width: 340px
+
+	.contact-f
+		padding: 30px 20px 30px 20px
+		input
+			width: 100%
+		.title-f
+			font-size: 20px
+
+	.f-contact-b
+		width: auto
+		padding-left: 75px
+
+	.modal-dialog
+		max-width: 960px
+
+	.list-col
+		&-4
+			column-count: 3
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 991px)
+	article 
+		table
+			td, th
+				padding: 18px 10px
+				font-size: 14px
 
+	.modal-dialog
+		max-width: 768px
+
+	.navbar
+		margin-left: 0
+
+	.navbar-nav 
+		.nav-link
+			padding-left: 25px
+	.promo
+		.container
+			height: 480px
+		&:after
+			background-size: 500px 300px
+			background-position: 75% 95%
+		.section-title
+			top: 150px
+
+	.contact-f-wrap
+		width: 320px
+
+	.top-line
+		padding-top: 20px
+
+	.top-line-b
+		height: 60px
+		font-size: 15px
+		&:nth-child(1),
+			display: none !important
+
+	.ishome .advantages,
+	.advantages
+		margin: 8% 0 6% 0
+
+	.adv-title, .adv-desc
+		margin-left: 24%
+
+	.section-title
+		margin-bottom: 1.2em
+
+	.section-subtitle
+		margin: 1em 0 2em 0
+
+	.catalog
+		margin-bottom: 50px
+
+	.upBtn
+		top: 60%
+		right: 15px
+		&:hover
+			top: 61%
+
+	.pride
+		padding-bottom: 80px
+
+	.list-col
+		&-3,
+		&-4
+			column-count: 2
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.modal-dialog
+		max-width: 460px
 
+@media only screen and (max-width : 767px)
+	article 
+		table 
+			td, th
+				min-width: 120px
+				padding: 12px 15px
+
+	.logo
+		max-width: 150px
+		height: 60px
+
+	.navbar
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		margin-top: 0
+		&-nav
+			padding: 20px
+			background-color: $blue
+			box-shadow: 0 5px 25px rgba(0,0,0,.2)
+			flex-direction: column;
+		.navbar-nav
+			.nav-item
+				text-align: center
+				.nav-link
+					padding: 8px 0
+
+	.navbar-toggler
+		display: block !important 
+		top: 30px
+		left: initial
+		right: 15px
+		&.active
+			left: initial
+			right: 15px
+
+	.ishome .navbar
+		margin-top: 0
+		margin-left: 0
+	
+	.footer-nav 
+		.navbar-nav
+			padding: 20px 0
+
+	.modal-title
+		font-size: 32px
+
+	.contact-b
+		width: 100%
+
+	.ishome
+		.top-line
+			padding-bottom: 0
+
+	.top-line
+		padding-bottom: 20px
+
+	.top-line-b
+		margin-left: 15px
+		
+		font-size: 14px
+		background-color: transparent
+		color: #fff
+		&:nth-child(n)
+			width: 150px
+			padding: 0 15px
+		&:nth-child(3),
+			display: none !important
+		.modal-btn
+			font-size: 14px
+		a
+			color: #fff
+			&:hover
+				color: $accent
+
+	.promo
+		.container
+			height: 430px
+		.section-title
+			top: 130px
+			font-size: 30px
+		&:after
+			background-size: 460px 300px
+			background-position: 70% 95%
+
+	.adv-title, .adv-desc
+		margin-left: 18%
+
+	.catalog-filter
+		.col
+			flex-basis: 100%
+
+	.drop-select
+		width: 100%
+
+@media only screen and (max-width : 575px)
+	.top-line
+		padding-top: 20px
+		.container
+			justify-content: flex-start
+
+	.section-b
+		margin: 10% 0
+
+	.ishome .advantages,
+	.advantages
+		margin: 12% 0 10% 0
+
+	.modal-header
+		padding-top: 60px
+		padding-bottom: 0
+
+	.vehicle-info-modal .modal-header
+		padding: 60px 15px 0 15px
+
+	.list-col
+		li
+			padding-left: 20px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.section-header
+		margin-bottom: 30px
 
+	.top-line 
+		.container
+			flex-direction: column
+		&-b
+			margin-top: 15px
+			margin-left: 0
+	
+	.modal-dialog
+		max-width: 320px
+
+	.modal-title
+		font-size: 26px
+
+	.modal
+		.close
+			top: 15px
+			right: 15px
+			&-i
+				width: 35px
+				height: 35px			
+
+	.callback-f
+		input
+			width: 100%
+
+	.adv-title, .adv-desc
+		margin-left: 70px
+
+	.promo
+		&:after
+			background-size: 340px 260px
+			background-position: 90% 100%
+		.section-title
+			top: 130px
+			max-width: 80%
+			margin: 0 0 0 auto
+			font-size: 32px
+
+	.list-col
+		li
+			padding-left: 15px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	.promo
+		&:after
+			background-size: 300px 225px
+			background-position: 15px 100%
+		.container
+			height: 400px
 
+	.list-col
+		&-3, 
+		&-4,
+		&-2
+			column-count: 1
 
 /*==========  Mobile First  ==========*/
 
@@ -41,13 +345,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.navbar-collapse
+		&.collapse
+			display: block !important
+			height: auto !important
+			overflow: visible !important
+
+	.navbar-toggler
+		display:  none
 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
-
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
