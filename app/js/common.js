@@ -136,7 +136,7 @@ $(function() {
 ;( function( window, document ) {
 	'use strict';
 
-	var file     = '../img/sprite.svg',
+	var file     = 'assets/templates/smartlift-master/dist/img/sprite.svg',
 	revision = 6;
 
 	if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )

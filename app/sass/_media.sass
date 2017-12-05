@@ -75,6 +75,11 @@
 		&-4
 			column-count: 3
 
+	.product-footer
+		flex-direction: column
+		div
+			margin-bottom: 15px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	article 
@@ -145,6 +150,9 @@
 			.form-input
 				width: 100%
 				max-width: 100%
+
+	.product-footer
+		flex-direction: row
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -336,6 +344,25 @@
 	.repair-desc
 		margin-left: 80px
 
+	.product-photo
+		height: 320px
+		min-height: 320px
+	
+	.product-calc-wrap,
+	.product-calc
+		padding: 20px
+
+	.product-footer
+		flex-direction: column
+
+	.product-calc-table 
+		.col50
+			padding: 12px 0
+			font-size: 14px
+			&:first-child
+				width: 40%
+				text-align: left
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.promo
@@ -350,6 +377,7 @@
 		&-4,
 		&-2
 			column-count: 1
+
 
 /*==========  Mobile First  ==========*/
 
