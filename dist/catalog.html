@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>SmartLIFT</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		
+<header class="main-header">
+	<div class="top-line">
+		<div class="container">
+			<a href="/" class="logo">
+				<span class="to-home"><i class="arrow-wrap"><svg class="arrow-i"><use xlink:href="#arrow-light"></use></svg></i>На главную</span>
+			</a>
+			<div class="contact-b">
+				<div class="top-line-b"><p>Работаем <i>круглосуточно</i> и <i>без выходных</i></p></div>
+				<div class="top-line-b">
+					<a href="tel:+74955080802">+7 (495) 508 08 02</a>
+					<a href="tel:+79099106633">+7 (909) 910 66 33</a>
+				</div>
+				<div class="top-line-b">
+					<button type="button" class="btn modal-btn" data-toggle="modal" data-target="#callback-modal">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<nav class="navbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse" id="main-nav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="product.html">Автовышки</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="price.html">Цены</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ремонт автовышек</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">О компании</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	</div>
+</header>
+
+	<main class="main">
+		<section class="catalog-prime section-b">
+			<div class="container">
+
+				<header class="section-header">
+					<div class="section-title">Каталог автовышек</div>
+				</header>
+
+				<div class="section-content">
+					
+					<div class="catalog-filter-prime">
+						<form action="#">
+							<div class="form-row">
+								<div class="col">
+									<div class="heightLifting" id="heightLifting">
+										<div class="header">Максимальная рабочая высота:</div> 
+										<div class="filter-content">
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-17" value="17 м">
+													<label for="lift-17"></label>
+													<span>17 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-20" value="20 м">
+													<label for="lift-20"></label>
+													<span>20 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-22" value="22 м">
+													<label for="lift-22"></label>
+													<span>22 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-25" value="25 м">
+													<label for="lift-25"></label>
+													<span>25 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-26" value="26 м">
+													<label for="lift-26"></label>
+													<span>26 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-28" value="28 м">
+													<label for="lift-28"></label>
+													<span>28 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-29" value="29 м">
+													<label for="lift-29"></label>
+													<span>29 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-32" value="32 м">
+													<label for="lift-32"></label>
+													<span>32 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-35" value="35 м">
+													<label for="lift-35"></label>
+													<span>35 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-40" value="40 м">
+													<label for="lift-40"></label>
+													<span>40 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-42" value="42 м">
+													<label for="lift-42"></label>
+													<span>42 м</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="lift-45" value="45 м">
+													<label for="lift-45"></label>
+													<span>45 м</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="capacity" id="capacity">
+										<div class="header">Грузоподъемность люльки</div> 
+										<div class="filter-content">
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-200" value="200 кг">
+													<label for="capacity-200"></label>
+													<span>200 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-250" value="250 кг">
+													<label for="capacity-250"></label>
+													<span>250 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-300" value="300 кг">
+													<label for="capacity-300"></label>
+													<span>300 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-400" value="400 кг">
+													<label for="capacity-400"></label>
+													<span>400 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-450" value="450 кг">
+													<label for="capacity-450"></label>
+													<span>450 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-500" value="500 кг">
+													<label for="capacity-500"></label>
+													<span>500 кг</span>
+												</div>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="capacity-800" value="200 кг">
+													<label for="capacity-800"></label>
+													<span>800 кг</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="tType" id="tType">
+										<div class="header">Тип автовышки</div> 
+										<div class="filter-content">
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="type-1" value="Телескопическая">
+													<label for="type-1"></label>
+													<span>Телескопическая</span>
+												</div>
+												<button type="button" class="info-btn" data-toggle="modal" data-target="#info-modal"><svg class="question-i"><use xlink:href="#question-mark"></use></svg></button>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="type-2" value="Телескопическая с гуськом">
+													<label for="type-2"></label>
+													<span>Телескопическая с гуськом</span>
+												</div>
+												<button type="button" class="info-btn" data-toggle="modal" data-target="#info-modal"><svg class="question-i"><use xlink:href="#question-mark"></use></svg></button>
+											</div>
+											<div class="checkbox">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="type-3" value="Автовышка с балконом">
+													<label for="type-3"></label>
+													<span>Автовышка с балконом</span>
+												</div>
+												<button type="button" class="info-btn" data-toggle="modal" data-target="#info-modal"><svg class="question-i"><use xlink:href="#question-mark"></use></svg></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="helper-col">
+									<div class="helper-b">
+										<div class="helper-title">Нужна наша помощь?</div>
+										<button type="button" class="btn" data-target="#callback-modal" data-toggle="modal">Получить консультацию</button>
+									</div>
+									<button type="reset" class="reset-btn">Сбросить фильтр</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="catalog-list card-list">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-1.jpg" alt="Truck 1">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая с балконом</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>10 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 200кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема</div>
+										<div class="card-footer">
+											<div class="card-price">от 7 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-2.jpg" alt="Truck 2">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>10 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 200кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования, боевого расчета, с целью проведения противопожарных и спасательных работ на высоте до 30 м. Автовышка оснащена люлькой (корзиной) с электроизоляцией, позволяющей оператору проводить обслуживание и ремонт линий электропередач (ЛЭП) и связи под напряжением до 1000 В без отключения электроэнергии.</div>
+										<div class="card-footer">
+											<div class="card-price">от 5 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-3.jpg" alt="Truck 3">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая с гуськом</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>12 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 400кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования, боевого расчета, с целью проведения противопожарных и спасательных работ на высоте до 30 м. Автовышка оснащена люлькой (корзиной) с электроизоляцией, позволяющей оператору проводить обслуживание и ремонт линий электропередач (ЛЭП) и связи под напряжением до 1000 В без отключения электроэнергии.</div>
+										<div class="card-footer">
+											<div class="card-price">от 4 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-1.jpg" alt="Truck 1">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая с балконом</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>10 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 200кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования, боевого расчета, с целью проведения противопожарных и спасательных работ на высоте до 30 м. Автовышка оснащена люлькой (корзиной)</div>
+										<div class="card-footer">
+											<div class="card-price">от 7 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-2.jpg" alt="Truck 2">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>10 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 200кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования, боевого расчета, с целью проведен</div>
+										<div class="card-footer">
+											<div class="card-price">от 5 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="card card-item">
+									<img class="card-img-top" src="pic/vehicles/v-3.jpg" alt="Truck 3">
+									<div class="card-body">
+										<h4 class="card-title">Телескопическая с гуськом</h4>
+										<table class="card-text">
+											<tr>
+												<td>Высота подъема:</td>
+												<td>17 метров</td>
+											</tr>
+											<tr>
+												<td>Вылет стрелы:</td>
+												<td>12 метров</td>
+											</tr>
+											<tr>
+												<td>Грузоподъёмность:</td>
+												<td>до 400кг</td>
+											</tr>
+										</table>
+										<div class="card-info">Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования, боевого расчета, с целью проведения противопожарных и спасательных работ на высоте до 30 м. Автовышка оснащена люлькой (корзиной) с электроизоляцией, позволяющей оператору проводить обслуживание и ремонт линий электропередач (ЛЭП) и связи под напряжением до 1000 В без отключения электроэнергии.</div>
+										<div class="card-footer">
+											<div class="card-price">от 4 600 руб/смена</div>
+											<div class="btn-group">
+												<button data-toggle="modal" data-target="#vehicle-info-modal" class="btn btn-w">Подробнее</button>
+												<button data-toggle="modal" data-target="#order-modal" class="btn">Заказать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="info-modal" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
+						</button>
+						<div class="modal-header">
+							<h5 class="modal-title" id="info-modal-title">Информация</h5>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="order-modal" tabindex="-1" role="dialog" aria-labelledby="order-modal" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
+						</button>
+						<div class="modal-header">
+							<h5 class="modal-title" id="order-modal-title">Заказать автовышку</h5>
+						</div>
+						<div class="modal-body">
+							<div class="d-flex justify-content-center">
+								<form action="" class="callback-f">
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Ваше имя">
+									</div>
+									<div class="form-group">
+										<input type="tel" name="phone" placeholder="Телефон">
+									</div>
+									<div class="form-group">
+										<label>Комментарий к заказу</label>
+										<textarea name="order-comment" placeholder="Пожарная телескопическая автовышка с гуськом Socage TJ-30 на шасси повышенной проходимости КамАЗ-43118 (6х6) предназначена для подъема противопожарного оборудования."></textarea>
+									</div>
+									<div class="form-group">
+										<input type="submit" class="btn" value="Заказать автовышку">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal vehicle-info-modal fade" id="vehicle-info-modal" tabindex="-1" role="dialog" aria-labelledby="vehicle-info-modal" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
+						</button>
+						<div class="row d-flex flex-column align-items-center">
+							<div class="col-lg-6">
+								<div class="modal-header">
+									<h6 class="modal-title" id="vehicle-info-modal-title">Автовышка <span></span></h6>
+								</div>
+								<div class="modal-body">
+									<p class="vehicle-info-text">Описание автовышки</p>
+									<div class="related-v">
+										<div class="related-v-title">Другие автовышки:</div>
+										<a href="#" class="modal-btn">Телескопическая</a>, <a href="#" class="modal-btn">Автовышка с балконом</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="advantages section-b">
+			<div class="container">
+				<header class="section-header">
+					<div class="section-title">Наши преимущества</div>
+				</header>
+				<div class="section-content">
+					<div class="row adv-list">
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-stopwatch-dims"><use xlink:href="#stopwatch"></use></svg>
+							<div class="adv-title">Быстрая подача машин без опозданий</div>
+							<div class="adv-desc">Места постоянного базирования наших автовышек расположены на территории Москвы и области таким образом, чтобы обеспечить максимально оперативную подачу техники по любому адресу.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-invoice-dims"><use xlink:href="#invoice"></use></svg>
+							<div class="adv-title">Автовышки с пропуском в центр Москвы</div>
+							<div class="adv-desc">Если адрес проведения ваших работ находится недалеко от текущего места нахождения нашей техники, то цена аренды автовышки в Москве будет для вас еще ниже! Уточнить актуальную информацию можно по телефону.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-operator-dims"><use xlink:href="#operator"></use></svg>
+							<div class="adv-title">Вежливые менеджеры, компетентная консультация</div>
+							<div class="adv-desc">Вы можете выбрать автовышку самостоятельно или же довериться нашим профессоналам. Просто позвоните и опишите задачи, которые вам нужно решить.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-medal-dims"><use xlink:href="#medal"></use></svg>
+							<div class="adv-title">Заинтересованные, аттестованные машинисты</div>
+							<div class="adv-desc">Если адрес проведения ваших работ находится недалеко от текущего места нахождения нашей техники, то цена аренды автовышки в Москве будет для вас еще ниже! </div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-truck-dims"><use xlink:href="#truck"></use></svg>
+							<div class="adv-title">Собственный парк автовышек – никаких посредников</div>
+							<div class="adv-desc">Места постоянного базирования наших автовышек расположены на территории Москвы и области таким образом, чтобы обеспечить максимально оперативную подачу техники по любому адресу.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-like-dims"><use xlink:href="#like"></use></svg>
+							<div class="adv-title">Успешно работаем с 2007 года</div>
+							<div class="adv-desc">Если адрес проведения ваших работ находится недалеко от текущего места нахождения нашей техники, то цена аренды автовышки в Москве будет для вас еще ниже! Уточнить актуальную информацию можно по телефону.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-repair-dims"><use xlink:href="#repair"></use></svg>
+							<div class="adv-title">Машины проходят плановое ТО и обслуживание</div>
+							<div class="adv-desc">Места постоянного базирования наших автовышек расположены на территории Москвы и области таким образом, чтобы обеспечить максимально оперативную подачу техники по любому адресу.</div>
+						</div>
+						<div class="col-lg-6 col-md-6 adv-item">
+							<svg class="adv-i svg-piggy-bank-dims"><use xlink:href="#piggy-bank"></use></svg>
+							<div class="adv-title">Стоимость от 6800 р. за смену</div>
+							<div class="adv-desc">Если адрес проведения ваших работ находится недалеко от текущего места нахождения нашей техники, то цена аренды автовышки в Москве будет для вас еще ниже! Уточнить актуальную информацию можно по телефону.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 d-none d-lg-block">
+					<div class="contact-f-wrap">
+						<form action="#" class="contact-f">
+							<div class="title-f">Остались вопросы? <i>Задайте их нам!</i></div>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Ваше имя">
+							</div>
+							<div class="form-group">
+								<input type="tel" name="phone" placeholder="Телефон">
+							</div>
+							<input type="submit" value="Отправить" class="btn">
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 order-2 order-md-1">
+					<div class="footer-nav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Автовышки</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Цены</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Ремонт автовышек</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">О компании</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<a href="">Информация</a><br/>
+						<a href="">Политика конфиденциальности</a>
+					</div>
+					<div class="copyright">&copy; 2007-2017 СмартЛифт</div>
+				</div>
+				<div class="col-lg-4 col-md-6 order-1 order-sm-1">
+					<div class="f-contact-b">
+						<div class="f-contact-b-title">Круглосуточно <span>и без выходных</span></div>
+						<div class="f-tel-b">
+							<svg class="f-icon phone-i"><use xlink:href="#phone-thin"></use></svg>
+							<a href="tel:+74955080802">+7 (495) 508 08 02</a>	
+							<a href="tel:+79099106633">+7 (909) 910 66 33</a>
+						</div>
+						<button type="button" class="modal-btn" data-toggle="modal" data-target="#success-modal">Заказать звонок</button>
+						<div class="f-email-b">
+							<svg class="f-icon envelope-i"><use xlink:href="#mail-envelope"></use></svg>
+							<a href="mailto:smart-lift@inbox.ru">smart-lift@inbox.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
+			</button>
+			<div class="modal-header">
+				<h5 class="modal-title" id="success-modal-title"><svg class="check-i"><use xlink:href="#check-square"></use></svg>Отправлено</h5>
+				<p class="modal-subtitle">Мы скоро вам позвоним!</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="callback-modal" tabindex="-1" role="dialog" aria-labelledby="callback-modal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
+			</button>
+			<div class="modal-header">
+				<h5 class="modal-title" id="callback-modal-title">Перезвонить вам?</h5>
+				<p class="modal-subtitle">Оставьте свои контактные данные и мы сами свяжемся с вами!</p>
+			</div>
+			<div class="modal-body">
+				<div class="d-flex justify-content-center">
+					<form action="#" class="callback-f">
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+							<input type="tel" name="phone" placeholder="Телефон">
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn" value="Заказать звонок">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+<script>
+	function initMap() {
+     var uluru = {lat: 55.7085021, lng: 37.6537200};
+     var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 15,
+       center: uluru,
+       styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+     });
+     var marker = new google.maps.Marker({
+       position: uluru,
+       map: map,
+       icon: 'img/svg-icons/map-pin.svg'
+     });
+   }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAp3H_ybUECtQSnXZnUhY9a1Lili6z0Oo&callback=initMap"
+  async defer>
+</script>
+
+</body>
+</html>

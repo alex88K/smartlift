@@ -80,6 +80,27 @@
 		div
 			margin-bottom: 15px
 
+	.catalog-filter-prime
+		.checkbox
+			span
+				max-width: 130px
+		.helper-col
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin: 25px 0 0 0
+			padding: 0
+			border: none
+		.reset-btn
+			order: 1
+		.helper-b
+			order: 2
+		.col
+			&:last-child
+				flex: none
+				padding: 0
+				border: none
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	article 
@@ -122,6 +143,16 @@
 	.advantages
 		margin: 8% 0 6% 0
 
+	.logo
+		.to-home
+			font-size: 16px
+			.arrow-wrap
+				width: 50px
+				height: 50px
+				margin-top: -25px
+			.arrow-i
+				left: 12px
+
 	.adv-title, .adv-desc
 		margin-left: 24%
 
@@ -154,6 +185,14 @@
 	.product-footer
 		flex-direction: row
 
+	.catalog-filter-prime 
+		.col
+			padding: 0 0 0 20px
+		.heightLifting 
+			.filter-content
+				column-count: 2
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -168,8 +207,20 @@
 				padding: 12px 15px
 
 	.logo
-		max-width: 150px
+		max-width: 140px
 		height: 60px
+		.to-home
+			padding-left: 30px
+			font-size: 14px
+			.arrow-wrap
+				width: 30px
+				height: 30px
+				margin-top: -15px
+			.arrow-i
+				left: 8px
+				width: 20px
+				height: 20px
+				margin-top: -10px
 
 	.navbar
 		position: absolute
@@ -238,9 +289,9 @@
 
 	.promo
 		.container
-			height: 430px
+			height: 400px
 		.section-title
-			top: 130px
+			top: 125px
 			font-size: 30px
 		&:after
 			background-size: 460px 300px
@@ -255,6 +306,26 @@
 
 	.drop-select
 		width: 100%
+
+	.catalog-filter-prime 
+		padding: 35px 25px
+		&:after,
+		&:before
+			display: none
+		.checkbox
+			span
+				min-width: 170px
+				margin-right: 0
+		.col
+			flex-basis: 100%
+			margin-bottom: 25px
+			padding: 0
+			&:last-child
+				margin-bottom: 0
+		.heightLifting,
+		.capacity
+			.filter-content
+				column-count: 3
 
 @media only screen and (max-width : 575px)
 	.top-line
@@ -293,17 +364,34 @@
 				input.btn
 					width: 180px
 
+	.catalog-filter-prime 
+		.helper-col
+			flex-wrap: wrap
+			margin: 0
+		.helper-b
+			flex-basis: 100%
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.logo
+		max-width: 120px
+		&:before
+			display: none
+		.to-home
+			display: none
+
 	.section-header
 		margin-bottom: 30px
 
 	.top-line 
-		.container
-			flex-direction: column
 		&-b
-			margin-top: 15px
 			margin-left: 0
+			a
+				margin: 2px 0
+				font-size: 13px
+				text-align: left
+
 	
 	.modal-dialog
 		max-width: 320px
@@ -328,11 +416,9 @@
 
 	.promo
 		&:after
-			background-size: 340px 260px
+			background-size: 340px 230px
 			background-position: 90% 100%
 		.section-title
-			top: 130px
-			max-width: 80%
 			margin: 0 0 0 auto
 			font-size: 32px
 
@@ -363,6 +449,9 @@
 				width: 40%
 				text-align: left
 
+	.product-details
+		display: block
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.promo
@@ -377,6 +466,17 @@
 		&-4,
 		&-2
 			column-count: 1
+
+	.logo
+		max-width: 90px
+	
+	.top-line-b 
+		a
+			font-size: 12px
+
+	.promo 
+		.section-title
+			top: 110px
 
 
 /*==========  Mobile First  ==========*/
