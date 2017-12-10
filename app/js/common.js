@@ -121,14 +121,16 @@ $(function() {
 	if( $(".product-calc").length ) {
 		var overtime = $("#overtime"),
 			insideTtk = $("#inside-ttk"),
+			addPriceTtk = $("#addPriceTtk"),
 			mkadKm = $("#mkad-km"),
 			mkadKmTotal = 0,
 			mkadKmCounted = 0,
-			addPriceVal = $("#addPriceVal"),
+			addPriceKm = $("#addPriceKm"),
 			kmPrice = parseInt( $("input[name='mkadKmPrice']").val() ), // Цена за км сверх 10км
 			total = $("#totalVal"),
 			rentPrice = parseFloat( $(".rent-price > span").text() ),
 			overall = rentPrice,
+			addPriceOvertime = $("#addPriceOvertime"),
 			overtimeTotal = 0,
 			overtimeCounted = 0,
 			overtimePrice = parseInt( $("input[name='overtimePrice']").val() ),  // Часы сверх смены
@@ -145,7 +147,7 @@ $(function() {
 
 		overtime.on("change", function(e) {
 			overtimeTotal = overtime.val() * overtimePrice;
-
+			addPriceOvertime.text( overtimeTotal );
 			overall += overtimeTotal - overtimeCounted;
 			total.text( overall );
 
@@ -155,8 +157,10 @@ $(function() {
 		insideTtk.on("change", function(e) {
 			if (insideTtk.prop('checked')) {
 				overall += ttkPrice;
+				addPriceTtk.text( ttkPrice );
 			} else {
 				overall -= ttkPrice;
+				addPriceTtk.text( 0 );
 			}
 
 			total.text( overall );
@@ -165,9 +169,9 @@ $(function() {
 		mkadKm.on("change", function(e) {
 			if (mkadKm.val() > 10) {
 				mkadKmTotal = (mkadKm.val() - 10) * 100;
-				addPriceVal.text( mkadKmTotal );
+				addPriceKm.text( mkadKmTotal );
 			} else {
-				addPriceVal.text( 0 );
+				addPriceKm.text( 0 );
 			}
 
 			overall += mkadKmTotal - mkadKmCounted;
@@ -175,7 +179,6 @@ $(function() {
 			mkadKmCounted = mkadKmTotal; 
 			mkadKmTotal = 0;
 		});	
-
 	}
 
 	$("#orderItem").on("click", function() {

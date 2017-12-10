@@ -23,7 +23,7 @@
 								<form action="#" class="product-calc">
 									
 									<input type="hidden" name="mkadKmPrice" value="100">
-									<input type="hidden" name="overtimePrice" value="1950">
+									<input type="hidden" name="overtimePrice" value="1900">
 									<input type="hidden" name="ttkPrice" value="950">
 									
 									<div class="product-calc-title">Рассчет стоимости</div>
@@ -34,16 +34,16 @@
 										</div>
 										<div class="calc-row">
 											<div class="col50">Часы сверх смены:</div>
-											<div class="col50"><input type="text" name="overtime" id="overtime"><span class="add-price">+ 1900 руб.</span></div>
+											<div class="col50"><input type="text" name="overtime" id="overtime"><span class="add-price">+ <span id="addPriceOvertime">0</span> руб.</span></div>
 										</div>
 										<div class="calc-row">
 											<div class="col50">Внутри ТТК</div>
-											<div class="col50"><input type="checkbox" id="inside-ttk" class="checkbox" name="inside-ttk"><label for="inside-ttk"><svg class="check-i"><use xlink:href="#check-thin"></use></svg></label><span class="add-price">+950 руб.</span></div>
+											<div class="col50"><input type="checkbox" id="inside-ttk" class="checkbox" name="inside-ttk"><label for="inside-ttk"><svg class="check-i"><use xlink:href="#check-thin"></use></svg></label><span class="add-price">+ <span id="addPriceTtk">0</span> руб.</span></div>
 										</div>
 										<div class="calc-row">
 											<div class="col50">Километры от МКАД:<span>(до 10 км бесплатно)</span></div>
 											<div class="col50">
-												<input type="text" name="mkad-km" id="mkad-km"><span class="add-price">+ <span id="addPriceVal">0</span> руб.</span>
+												<input type="text" name="mkad-km" id="mkad-km"><span class="add-price">+ <span id="addPriceKm">0</span> руб.</span>
 											</div>
 										</div>
 									</div>
