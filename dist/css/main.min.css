@@ -9952,9 +9952,12 @@ h6.modal-title {
       font-weight: 500;
       color: #595b9d;
       text-align: center; }
-    .product-calc-table .rent-price {
+    .product-calc-table .rent-price,
+    .product-calc-table .rent-price span {
       font-size: 18px;
       color: #ff931e; }
+    .product-calc-table .rent-price span {
+      display: inline; }
     .product-calc-table .add-price {
       position: absolute;
       top: 50%;

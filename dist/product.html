@@ -91,15 +91,20 @@
 						<div class="col col-lg-5 col-md-12 col-sm-12">
 							<div class="product-calc-wrap">
 								<form active="#" class="product-calc">
+									
+									<input type="hidden" name="mkadKmPrice" value="100">
+									<input type="hidden" name="overtimePrice" value="1950">
+									<input type="hidden" name="ttkPrice" value="950">
+									
 									<div class="product-calc-title">Рассчет стоимости</div>
 									<div class="product-calc-table">
 										<div class="calc-row">
 											<div class="col50 col-sm-12">Стоимость аренды:<span>(за 8-часовую смену)</span></div>
-											<div class="rent-price col50 col-sm-12">7 600 руб.</div>
+											<div class="rent-price col50 col-sm-12"><span>7600</span> руб.</div>
 										</div>
 										<div class="calc-row">
 											<div class="col50">Часы сверх смены:</div>
-											<div class="col50"><input type="text" name="overtime"><span class="add-price">+ 1900 руб.</span></div>
+											<div class="col50"><input type="text" name="overtime" id="overtime"><span class="add-price">+ 1900 руб.</span></div>
 										</div>
 										<div class="calc-row">
 											<div class="col50">Внутри ТТК</div>
@@ -108,13 +113,13 @@
 										<div class="calc-row">
 											<div class="col50">Километры от МКАД:<span>(до 10 км бесплатно)</span></div>
 											<div class="col50">
-												<input type="text" name="mkad-km"><span class="add-price">+ 0 руб.</span>
+												<input type="text" name="mkad-km" id="mkad-km"><span class="add-price">+ 0 руб.</span>
 											</div>
 										</div>
 									</div>
 									<div class="product-footer">
-										<div class="total"><span class="total-label">Итого:</span> 10450 руб.</div>
-										<button class="btn">Заказать</button>
+										<div class="total"><span class="total-label">Итого:</span><span id="totalVal">0</span> руб.</div>
+										<button type="button" class="btn" id="orderItem" data-toggle="modal" data-target="#callback-modal">Заказать</button>
 									</div>
 								</form >
 							</div>

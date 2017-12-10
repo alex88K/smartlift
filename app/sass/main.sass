@@ -229,7 +229,7 @@ input.error
 		border: 1px solid #e6e6e6
 		vertical-align: middle
 		cursor: pointer
-		user-select: none;
+		user-select: none
 		&:hover
 			border-color: $accent
 			& + span
@@ -1698,9 +1698,12 @@ h6.modal-title
 			font-weight: 500
 			color: $smooth-blue
 			text-align: center
-		.rent-price
+		.rent-price,
+		.rent-price span
 			font-size: 18px
 			color: $accent
+		.rent-price span
+		 	display: inline
 		.add-price
 			position: absolute
 			top: 50%

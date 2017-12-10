@@ -115,16 +115,92 @@ $(function() {
 		$(this).parents('.drop-select').find('.js-value').text( value );
 	});
 
-	// $('input[name="drop-select"] .filter-info-btn').on('click', function(e) {
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-	// })
+
+	// Calculator on Product page
+
+	if( $(".product-calc").length ) {
+		var overtime = $("#overtime"),
+			insideTtk = $("#inside-ttk"),
+			mkadKm = $("#mkad-km"),
+			mkadKmTotal = 0,
+			mkadKmCounted = 0,
+			kmPrice = parseInt( $("input[name='mkadKmPrice']").val() ), // Цена за км сверх 10км
+			total = $("#totalVal"),
+			rentPrice = parseFloat( $(".rent-price > span").text() ),
+			overall = rentPrice,
+			overtimeTotal = 0,
+			overtimeCounted = 0,
+			overtimePrice = parseInt( $("input[name='overtimePrice']").val() ),  // Часы сверх смены
+			ttkPrice = parseInt( $("input[name='ttkPrice']").val() );		  		// Внутри ТТК
+			totalVal = total.text( rentPrice );
+
+		overtime.on("keypress", function(e) {
+			validateNumb(e);
+		});
+		
+		mkadKm.on("keypress", function(e) {
+			validateNumb(e);
+		});
+
+		overtime.on("change", function(e) {
+			overtimeTotal = overtime.val() * overtimePrice;
+
+			overall += overtimeTotal - overtimeCounted;
+			total.text( overall );
+
+			overtimeCounted = overtimeTotal;
+		});	
+
+		insideTtk.on("change", function(e) {
+			if (insideTtk.prop('checked')) {
+				overall += ttkPrice;
+			} else {
+				overall -= ttkPrice;
+			}
+
+			total.text( overall );
+		});	
+
+		mkadKm.on("change", function(e) {
+			if (mkadKm.val() > 10) {
+				mkadKmTotal = (mkadKm.val() - 10) * 100;
+			} 
+
+			overall += mkadKmTotal - mkadKmCounted;
+			total.text( overall );
+
+			mkadKmCounted = mkadKmTotal; 
+			mkadKmTotal = 0;
+		});	
+
+	}
+
+	$("#orderItem").on("click", function() {
+		if ( isNumber(overall) ) {
+			$(".modal input[name='totalPrice']").val( overall );
+		}
+	});
 
 });
 
+// Validate function - if Number 
 
+function validateNumb(evt) {
+	var theEvent = evt || window.event;
+	var key = theEvent.keyCode || theEvent.which;
+	key = String.fromCharCode( key );
+	var regex = /[0-9]|\./;
+	
+	if( !regex.test(key) ) {
+		theEvent.returnValue = false;
 
+		if( theEvent.preventDefault ) theEvent.preventDefault();
+	}
+}
 
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
 
 
 
