@@ -9965,6 +9965,8 @@ h6.modal-title {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
+      .product-calc-table .add-price span {
+        display: inline; }
 
 .product-footer {
   display: -webkit-box;

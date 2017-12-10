@@ -124,6 +124,7 @@ $(function() {
 			mkadKm = $("#mkad-km"),
 			mkadKmTotal = 0,
 			mkadKmCounted = 0,
+			addPriceVal = $("#addPriceVal"),
 			kmPrice = parseInt( $("input[name='mkadKmPrice']").val() ), // Цена за км сверх 10км
 			total = $("#totalVal"),
 			rentPrice = parseFloat( $(".rent-price > span").text() ),
@@ -164,11 +165,13 @@ $(function() {
 		mkadKm.on("change", function(e) {
 			if (mkadKm.val() > 10) {
 				mkadKmTotal = (mkadKm.val() - 10) * 100;
-			} 
+				addPriceVal.text( mkadKmTotal );
+			} else {
+				addPriceVal.text( 0 );
+			}
 
 			overall += mkadKmTotal - mkadKmCounted;
 			total.text( overall );
-
 			mkadKmCounted = mkadKmTotal; 
 			mkadKmTotal = 0;
 		});	
@@ -178,6 +181,9 @@ $(function() {
 	$("#orderItem").on("click", function() {
 		if ( isNumber(overall) ) {
 			$(".modal input[name='totalPrice']").val( overall );
+			$(".modal input[name='overtimeVal']").val( overtime.val() );
+			$(".modal input[name='insideTtk']").val( insideTtk.prop('checked') );
+			$(".modal input[name='mkadKmCounted']").val( mkadKm.val() );
 		}
 	});
 

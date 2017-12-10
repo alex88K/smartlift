@@ -113,7 +113,7 @@
 										<div class="calc-row">
 											<div class="col50">Километры от МКАД:<span>(до 10 км бесплатно)</span></div>
 											<div class="col50">
-												<input type="text" name="mkad-km" id="mkad-km"><span class="add-price">+ 0 руб.</span>
+												<input type="text" name="mkad-km" id="mkad-km"><span class="add-price">+ <span id="addPriceVal">0</span> руб.</span>
 											</div>
 										</div>
 									</div>
@@ -294,6 +294,12 @@
 			<div class="modal-body">
 				<div class="d-flex justify-content-center">
 					<form action="#" class="callback-f">
+						
+						<input type="hidden" name="totalPrice">
+						<input type="hidden" name="overtimeVal">
+						<input type="hidden" name="insideTtk">
+						<input type="hidden" name="mkadKmCounted">
+
 						<div class="form-group">
 							<input type="text" name="name" placeholder="Ваше имя">
 						</div>
